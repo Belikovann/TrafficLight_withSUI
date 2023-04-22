@@ -53,16 +53,10 @@ extension ContentView {
         
         switch currentLight {
         case .red:
-            _ = greenLight.opacity(0)
-            _ = redLight.opacity(1)
             currentLight = .yellow
         case .yellow:
-            _ = redLight.opacity(0)
-            _ = yellowLight.opacity(1)
             currentLight = .green
         case .green:
-            _ = greenLight.opacity(1)
-            _ = yellowLight.opacity(0)
             currentLight = .red
         }
     }
