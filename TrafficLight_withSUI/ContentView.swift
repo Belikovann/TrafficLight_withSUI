@@ -19,8 +19,7 @@ struct ContentView: View {
     @State private var redLight = CircleView()
     @State private var yellowLight = CircleView()
     @State private var greenLight = CircleView()
-    @State private var lightIsOn: CGFloat = 1
-    
+    @State private var buttonTitle = "Start"
     
     var body: some View {
         ZStack() {
@@ -29,52 +28,51 @@ struct ContentView: View {
             VStack(spacing: 15.0) {
                 redLight
                     .foregroundColor(.red)
+                    .opacity(currentLight == .red ? 1 : 0.3)
                 yellowLight
                     .foregroundColor(.yellow)
+                    .opacity(currentLight == .yellow ? 1 : 0.3)
                 greenLight
                     .foregroundColor(.green)
+                    .opacity(currentLight == .green ? 1 : 0.3)
+                SwitchColorButton(title: buttonTitle,
+                                  action: switchColorButton)
+                    .padding(.top, 200)
+                }
+                .padding()
             }
-            .padding(.bottom, 300)
-            
-            Button(action: switchButton) {
-                Text(" START ")
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-                    .font(.largeTitle)
-                    .padding(.horizontal)
-                    .background(.blue)
-                    .cornerRadius(10)
-                    .frame(maxWidth: .greatestFiniteMagnitude)
-            }
-            .padding(.top, 600)
         }
-        
     }
-}
+
 
 extension ContentView {
-    private func switchButton() {
+    private func switchColorButton() {
+        if buttonTitle == "Start" {
+            buttonTitle = "Next"
+        }
         
         switch currentLight {
         case .red:
-            _ = greenLight.opacity(0) as! CircleView
-            _ = redLight.opacity(lightIsOn)
+            _ = greenLight.opacity(0)
+            _ = redLight.opacity(1)
             currentLight = .yellow
         case .yellow:
             _ = redLight.opacity(0)
-            _ = yellowLight.opacity(lightIsOn)
+            _ = yellowLight.opacity(1)
             currentLight = .green
         case .green:
-            _ = greenLight.opacity(lightIsOn)
+            _ = greenLight.opacity(1)
             _ = yellowLight.opacity(0)
             currentLight = .red
         }
-        
     }
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+

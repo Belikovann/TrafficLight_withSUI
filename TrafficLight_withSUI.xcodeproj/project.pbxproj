@@ -12,6 +12,7 @@
 		C8B72EC429F1B9E900C489E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B72EC329F1B9E900C489E1 /* Assets.xcassets */; };
 		C8B72EC729F1B9E900C489E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B72EC629F1B9E900C489E1 /* Preview Assets.xcassets */; };
 		C8B72ECE29F1C0C000C489E1 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B72ECD29F1C0C000C489E1 /* CircleView.swift */; };
+		C8FA066A29F47332008C4AF6 /* SwitchColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FA066929F47332008C4AF6 /* SwitchColorButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		C8B72EC329F1B9E900C489E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8B72EC629F1B9E900C489E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C8B72ECD29F1C0C000C489E1 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		C8FA066929F47332008C4AF6 /* SwitchColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchColorButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				C8B72EBF29F1B9E700C489E1 /* TrafficLight_withSUIApp.swift */,
 				C8B72EC129F1B9E700C489E1 /* ContentView.swift */,
 				C8B72ECD29F1C0C000C489E1 /* CircleView.swift */,
+				C8FA066929F47332008C4AF6 /* SwitchColorButton.swift */,
 				C8B72EC329F1B9E900C489E1 /* Assets.xcassets */,
 				C8B72EC529F1B9E900C489E1 /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 				C8B72ECE29F1C0C000C489E1 /* CircleView.swift in Sources */,
 				C8B72EC229F1B9E700C489E1 /* ContentView.swift in Sources */,
 				C8B72EC029F1B9E700C489E1 /* TrafficLight_withSUIApp.swift in Sources */,
+				C8FA066A29F47332008C4AF6 /* SwitchColorButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
