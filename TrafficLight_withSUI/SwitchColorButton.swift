@@ -18,7 +18,7 @@ struct SwitchColorButton: View {
                 .fontWeight(.bold)
                 .foregroundColor(.white)
                 .font(.largeTitle)
-                .padding(.horizontal)
+                .padding(.horizontal, 100)
                 .background(.blue)
                 .cornerRadius(10)
         }
